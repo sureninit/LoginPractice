@@ -7,6 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-welcome
+<%
+if(session.getAttribute("unames")==null){
+	response.sendRedirect("index.jsp");
+}
+%>
+welcome ${unames}
+
+<form action="Logout" method="post">
+<input type="submit" value="logout">
+</form>
+
+
 </body>
 </html>

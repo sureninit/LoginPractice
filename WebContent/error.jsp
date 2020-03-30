@@ -8,5 +8,6 @@
 </head>
 <body>
 error page
+<a href="index.jsp">login</a>
 </body>
 </html>
