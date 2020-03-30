@@ -28,7 +28,7 @@ public class Login extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		
 		String uname = request.getParameter("uname");
 		String pass = request.getParameter("pass");
 		if(uname.equals("java") && pass.equals("jee"))
@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
 		}else {
 			response.sendRedirect("error.jsp");
 		}
-		
+		//request
 	}
 
 }
